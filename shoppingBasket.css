@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+main {
+	background-color: #2e2d44;
+}
+.nav-icon {
+	width: 30px;
+	height: 30px;
+}
+.card-deck {
+	width: 80%;
+	margin: 0;
+	background-color: #2e2d44;
+}
+.card-voucher {
+	background-color: #01061e;
+}
+.card-text.text-light {
+	font-weight: lighter;
+}
