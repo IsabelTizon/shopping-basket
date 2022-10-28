@@ -1,18 +1,56 @@
+/*! hola */
+/*? hola */
+/* hola */
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 main {
 	background-color: #2e2d44;
 }
+
 .nav-icon {
 	width: 30px;
 	height: 30px;
 }
+.cart {
+	border-radius: 3px #2e2d44;
+	width: 35px;
+	height: 35px;
+	position: relative;
+}
+.cartAmount {
+	position: absolute;
+	top: -20px;
+	right: -15px;
+	padding: 3px;
+	border-radius: 3px;
+	font-size: 16px;
+	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+}
+.btn-minus,
+.btn-plus {
+	background-color: #01061e !important;
+	font-weight: lighter;
+}
+.bi {
+	color: rgb(255, 255, 255);
+}
+.btn-cart-card {
+	background-color: rgb(59, 131, 189);
+	color: rgb(255, 255, 255);
+	border: none;
+}
+.btn-cart-card:hover {
+	background-color: rgb(90, 4, 144);
+}
 .card-deck {
 	width: 80%;
-	margin: 0;
+	margin: 20px auto;
 	background-color: #2e2d44;
 }
 .card-voucher {
@@ -20,4 +58,7 @@ main {
 }
 .card-text.text-light {
 	font-weight: lighter;
+}
+
+@media (min-width: 768px) {
 }
