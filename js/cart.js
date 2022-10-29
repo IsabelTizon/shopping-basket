@@ -37,9 +37,10 @@ let generateCartItems = () => {
 			.map((x) => {
 				return `
                 <div class="cart-item">Hello</div>
+                
             `;
 			})
-			.join("")); //rendering the items from the shopping one buy one  with map method
+			.join(""));
 	} else {
 		//Running the if statement
 		shoppingCart.innerHTML = `
