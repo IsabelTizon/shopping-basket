@@ -11,7 +11,7 @@
 main {
 	background-color: #2e2d44;
 }
-
+/*? NAVBAR */
 .nav-icon {
 	width: 30px;
 	height: 30px;
@@ -32,6 +32,9 @@ main {
 	background-color: rgb(255, 0, 0);
 	color: rgb(255, 255, 255);
 }
+/*? NAVBAR finish */
+
+/*? CARDS */
 .btn-minus,
 .btn-plus {
 	background-color: #01061e !important;
@@ -48,17 +51,19 @@ main {
 .btn-cart-card:hover {
 	background-color: rgb(90, 4, 144);
 }
-.card-deck {
+.voucher-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	width: 80%;
 	margin: 20px auto;
 	background-color: #2e2d44;
 }
 .card-voucher {
+	width: 32%;
 	background-color: #01061e;
 }
 .card-text.text-light {
 	font-weight: lighter;
 }
-
-@media (min-width: 768px) {
-}
+/*? CARDS finish */

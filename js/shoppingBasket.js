@@ -19,39 +19,39 @@ let generateShop = () => {
 			let search = basket.find((x) => x.id === id) || [];
 
 			return `
-            <div id=product-id-${id} class="col">
-                <div class="card card-voucher">
-                            <img
-                                class="card-img-top"
-                                src=${img}
-                                alt="Card image cap"
-                            />
-                            <div class="card-body">
-                                <h4 class="card-title text-light">${name}</h4>
-                                <p class="card-text text-light">${desc}</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="row m-0">
-                                            <button class="btn btn-minus p-0">
-                                                <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
-                                            </button>
-                                            <div id=${id} class="quantity text-light p-2">${
+            <div id=product-id-${id} class="row">
+					<div class="card card-voucher">
+								<img
+									class="card-img-top"
+									src=${img}
+									alt="Card image cap"
+								/>
+								<div class="card-body">
+									<h4 class="card-title text-light">${name}</h4>
+									<p class="card-text text-light">${desc}</p>
+									<div class="row">
+										<div class="col">
+											<div class="row m-0">
+												<button class="btn btn-minus p-0">
+													<i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+												</button>
+												<div id=${id} class="quantity text-light p-2">${
 				search.item === undefined ? 0 : search.item
 			}</div> 
-                                            <button class="btn btn-plus p-0">
-                                                <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-cart-card">
-                                            Check out
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>`;
+												<button class="btn btn-plus p-0">
+													<i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+												</button>
+											</div>
+										</div>
+										<div class="col">
+											<button type="submit" class="btn btn-cart-card">
+												Check out
+											</button>
+										</div>
+									</div>
+								</div>
+				    </div>
+			</div>`;
 		})
 		.join("")); //join methond concatenates an array of strings into one string
 };
