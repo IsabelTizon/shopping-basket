@@ -35,6 +35,23 @@ main {
 /*? NAVBAR finish */
 
 /*? CARDS */
+.vouchers-card-deck {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+	background-color: #2e2d44;
+}
+.card-voucher {
+	width: 80%;
+	margin: 20px;
+	background-color: #01061e;
+}
+.card-text.text-light {
+	font-weight: lighter;
+}
+
 .btn-minus,
 .btn-plus {
 	background-color: #01061e !important;
@@ -51,19 +68,5 @@ main {
 .btn-cart-card:hover {
 	background-color: rgb(90, 4, 144);
 }
-.voucher-section {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: 80%;
-	margin: 20px auto;
-	background-color: #2e2d44;
-}
-.card-voucher {
-	width: 32%;
-	background-color: #01061e;
-}
-.card-text.text-light {
-	font-weight: lighter;
-}
+
 /*? CARDS finish */
