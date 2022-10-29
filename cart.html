@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Shopping Basket</title>
+		<title>Cart</title>
 
 		<!-- Boostrap 4 CSS -->
 		<link
@@ -19,13 +19,20 @@
 		/>
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="./styles/shoppingBasket.css" />
+		<link rel="stylesheet" href="./styles/cart.css" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
 		<!-- Navbar Boostrap 4 start -->
 		<nav class="navbar navbar-dark bg-dark">
-			<a href="#" class="navbar-brand text-light">Home</a>
+			<a href="./index.html" class="navbar-brand text-light">Home</a>
 			<div class="cart">
-				<a href="./cart.html">
+				<a href="#">
 					<img
 						class="nav-icon"
 						src="./img/icons/purple-shopping-cart.png"
@@ -36,26 +43,27 @@
 			</div>
 		</nav>
 		<!-- Navbar Boostrap 4 finish -->
+
+		<!-- Main start -->
+		<div id="label" class="text-center"></div>
+
 		<main>
-			<!-- Card section start -->
-			<div
-				id="vouchersCardDeck"
-				class="vouchersCardDeck card-deck row-cols-auto"
-			>
-				<div class="col">
-					<div class="card card-voucher">
-						<img
-							class="card-img-top"
-							src="./img/vouchers.jpg"
-							alt="Card image cap"
-						/>
-						<div class="card-body">
-							<h4 class="card-title text-light">£ 5</h4>
-							<p class="card-text text-light">
-								This card has supporting text below as a natural lead-in to
-								additional content.
-							</p>
-							<div class="row">
+			<!--Content basket start-->
+			<section id="shoppingCart" class="shopping-cart">
+				<div class="content-contact content-basket">
+					<!--Content contact left start-->
+					<div class="content-basket-left">
+						<div class="card">
+							<div class="row align-items-center">
+								<div class="col justify-content-center">
+									<div class="row">
+										<div class="card music-card-5">
+											<div class="card-body text-center">
+												<p class="card-text">£ 5</p>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="col">
 									<div class="row m-0">
 										<button class="btn btn-minus p-0">
@@ -68,28 +76,21 @@
 									</div>
 								</div>
 								<div class="col">
-									<button type="submit" class="btn btn-cart-card">
-										Check out
-									</button>
+									<span class="fa fa-trash form-control-icon"></span>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card card-voucher">
-						<img
-							class="card-img-top"
-							src="./img/vouchers2.jpg"
-							alt="Card image cap"
-						/>
-						<div class="card-body">
-							<h4 class="card-title text-light">£ 10</h4>
-							<p class="card-text text-light">
-								This card has supporting text below as a natural lead-in to
-								additional content.
-							</p>
-							<div class="row">
+						<div class="card">
+							<div class="row align-items-center">
+								<div class="col">
+									<div class="row">
+										<div class="card music-card-10">
+											<div class="card-body text-center">
+												<p class="card-text">£ 10</p>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="col">
 									<div class="row m-0">
 										<button class="btn btn-minus p-0">
@@ -102,28 +103,21 @@
 									</div>
 								</div>
 								<div class="col">
-									<button type="submit" class="btn btn-cart-card">
-										Check out
-									</button>
+									<span class="fa fa-trash form-control-icon"></span>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card card-voucher">
-						<img
-							class="card-img-top"
-							src="./img/vouchers4.jpg"
-							alt="Card image cap"
-						/>
-						<div class="card-body">
-							<h4 class="card-title text-light">£ 20</h4>
-							<p class="card-text text-light">
-								This card has supporting text below as a natural lead-in to
-								additional content.
-							</p>
-							<div class="row">
+						<div class="card">
+							<div class="row align-items-center">
+								<div class="col">
+									<div class="row">
+										<div class="card music-card-20">
+											<div class="card-body text-center">
+												<p class="card-text">£ 20</p>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="col">
 									<div class="row m-0">
 										<button class="btn btn-minus p-0">
@@ -136,21 +130,25 @@
 									</div>
 								</div>
 								<div class="col">
-									<button type="submit" class="btn btn-cart-card">
-										Check out
-									</button>
+									<span class="fa fa-trash form-control-icon"></span>
 								</div>
 							</div>
 						</div>
+						<div class="back-to-shop">
+							<a href="#">&leftarrow;</a
+							><span class="text-light p-lg-2">Back to shop</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<!--Content basket left finish -->
 		</main>
-		<!-- Card section 4 finish -->
+		<!-- Main finish -->
 
 		<!-- custom js -->
 		<script src="./js/data.js"></script>
-		<script src="./js/shoppingBasket.js"></script>
+		<script src="./js/cart.js"></script>
 
 		<!-- Boostrap 4  js -->
 		<!-- <script

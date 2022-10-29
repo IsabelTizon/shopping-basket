@@ -1,28 +1,5 @@
 let vouchersCardDeck = document.getElementById("vouchersCardDeck");
 
-let shopItemsData = [
-	{
-		id: "voucher5",
-		name: "£5",
-		desc: "This card has supporting text below as a natural lead-in to additional content.",
-		img: "./img/vouchers.jpg",
-	},
-
-	{
-		id: "voucher10",
-		name: "£10",
-		desc: "This card has supporting text below as a natural lead-in to additional content.",
-		img: "./img/vouchers2.jpg",
-	},
-
-	{
-		id: "voucher20",
-		name: "£20",
-		desc: "This card has supporting text below as a natural lead-in to additional content.",
-		img: "./img/vouchers4.jpg",
-	},
-];
-
 //BASKET LOCAL STORAGE
 // let basket = [];
 
@@ -158,6 +135,7 @@ let update = (id) => {
 };
 
 //CALCULATION FUNCTION
+//it is gonna get all the numbers to show the sum in the basket
 let calculation = () => {
 	//checking
 	// console.log("calculation is running");
