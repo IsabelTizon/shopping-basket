@@ -1,3 +1,30 @@
+/*? LABEL */
+.label {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100vw;
+	background-color: #01061e;
+	color: #ffffff;
+	/* background-color: #ffffff;
+	color: #01061e; */
+	margin-bottom: 20px;
+}
+.home-btn {
+	background-color: #6b22a4;
+	color: #ffffff;
+	border: none;
+	padding: 6px;
+	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.cart-item {
+	color: #ffffff;
+}
 /* shopping Page start */
 .content-contact {
 	display: flex;
