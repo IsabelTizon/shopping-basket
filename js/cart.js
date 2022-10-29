@@ -36,7 +36,7 @@ let generateCartItems = () => {
 		return (shoppingCart.innerHTML = basket
 			.map((x) => {
 				return `
-         <div class="cart-item">Hello</div>
+                <div class="cart-item">Hello</div>
             `;
 			})
 			.join("")); //rendering the items from the shopping one buy one  with map method
