@@ -44,9 +44,9 @@ let generateShop = () => {
 											</div>
 										</div>
 										<div class="col">
-											<button type="submit" class="btn btn-cart-card">
-												Check out
-											</button>
+											<a href="./cart.html">
+      											<button class="btn btn-cart-card">Checkout</button>
+    										</a>
 										</div>
 									</div>
 								</div>

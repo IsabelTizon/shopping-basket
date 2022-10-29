@@ -21,17 +21,9 @@ body {
 	color: #ffffff;
 	margin-bottom: 20px;
 }
-.home-btn {
-	background-color: #6b22a4;
-	color: #ffffff;
-	border: none;
-	padding: 6px;
-	cursor: pointer;
-	margin-top: 10px;
-	border-radius: 5px;
-}
 
-.basket-btn {
+.basket-btn,
+.home-btn {
 	background-color: rgb(59, 131, 189);
 	color: rgb(255, 255, 255);
 	border: none;
@@ -39,7 +31,8 @@ body {
 	margin: 10px;
 	border-radius: 3px;
 }
-.basket-btn:hover {
+.basket-btn:hover,
+.home-btn:hover {
 	background-color: rgb(90, 4, 144);
 }
 /*? LABEL finish */

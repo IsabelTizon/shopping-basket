@@ -2,7 +2,7 @@
 let shopItemsData = [
 	{
 		id: "voucher5",
-		name: "£5 Voucher",
+		name: "Voucher: £5",
 		desc: "This card has supporting text below as a natural lead-in to additional content.",
 		img: "./img/vouchers.jpg",
 		price: 5,
@@ -10,7 +10,7 @@ let shopItemsData = [
 
 	{
 		id: "voucher10",
-		name: "£10 Voucher",
+		name: "Voucher: £10",
 		desc: "This card has supporting text below as a natural lead-in to additional content.",
 		img: "./img/vouchers2.jpg",
 		price: 10,
@@ -18,7 +18,7 @@ let shopItemsData = [
 
 	{
 		id: "voucher20",
-		name: "£20 Voucher",
+		name: "Voucher: £20",
 		desc: "This card has supporting text below as a natural lead-in to additional content.",
 		img: "./img/vouchers4.jpg",
 		price: 20,
